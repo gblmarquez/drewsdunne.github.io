@@ -1,0 +1,129 @@
+<?php ?>
+<!--DOCTYPE html-->
+<html lang="en">
+	<head>
+		<title>drewsdunne</title>
+		<meta name="viewport" content="width=1280, initial-scale=1, maximum-scale=1">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+		<link rel="icon" href="img/icon.ico">
+		<style>
+		/* Reset defaults */
+		html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+		    margin: 0;
+		    padding: 0;
+		    border: 0;
+		    outline: 0;
+		    font-size: 100%;
+		    vertical-align: baseline;
+		    background: transparent;
+		}
+
+		/* Main Styles */
+		body {
+			background: white;
+			font-family: 'Ubuntu', 'Arial', sans-serif;
+			font-weight: 300;
+			color: #5696C7;
+			width: 1280px;
+			margin: 0 auto;
+		}
+
+		.project {
+			color: #5696C7;
+			display: block;
+			height: 700px;
+		}
+
+		.project h1 {
+			font-size: 50pt;
+			padding-top: 1em;
+		}
+
+		.project p {
+			font-size: 18pt;
+			padding: 0 50px 0 0;
+		}
+
+		.screenshot {
+			float: left;
+			width: 50%;
+			height: 600px;
+		}
+
+		.screenshot img {
+			height: 600px;
+			margin-top: 45px;
+			margin-left: 30%;
+			text-align: center;
+
+		}
+
+		.screenshot .coming-soon {
+			width: 300px;
+		    height: auto;
+			margin-top: 90px;
+			margin-left: 30%;
+			text-align: center;
+
+		}
+
+		.download-link {
+			display: inline-block;
+			margin-top: 75px;
+			padding: 15px 15px;
+			color: #5696C7;
+			font-family: "Open Sans", "Arial", sans-serif;
+			background-color: transparent;
+			text-decoration: none;
+			border-radius: 5px;
+			border: 1px solid #5696C7;
+			transition: all 300ms;
+		}
+
+		.download-link:hover {
+			background-color: #5696C7;
+			text-decoration: underline;
+			color: white;
+		}
+
+		#view1 {
+			color: #5696C7;
+		}
+
+		#view2 {
+			color: #57E6AC;
+		}
+
+		#view3 {
+			color: #E08DAC;
+		}
+
+		</style>
+	</head>
+	<body fullbleed unresolved>
+			<div class="project" id="view1">
+				<div class="screenshot">
+					<img src="img/screenshot1.png">
+				</div>
+				<h1>Hues</h1>
+				<p>Hues is a game based on your eyesight. It's all about picking out shades which are slightly different than others. At first, this may seem easy, but we can assure you that this game is far from easy.</p>
+			<a href="#" class="download-link">View on the App Store</a>
+			</div>
+			<div class="project" id="view2">
+				<div class="screenshot">
+					<img src="img/screenshot2.png">
+				</div>
+				<h1>Game Play</h1>
+				<p>A grid of tiles is presented to the player along with a menu along the top. The goal is to select the discolored tile before the timer runs out. If correct, a checkmark will appear and then another tile will become discolored and the timer is reset. Your score is based on how far the tile is from the original color and how long it takes you to select the tile. </p>
+			</div>
+			<div class="project" id="view3">
+				<div class="screenshot">
+					<!-- <img src="img/hues/screenshot3.png"> -->
+					<img class="coming-soon" src="img/drew-comingsoon-green.png">
+				</div>
+				<h1>Powerups</h1>
+				<p>Once you gain enough points, one can purchase skips from the powerups section. We hope to introduce more powerups but right now we just have skips. Skips allow you to skip a certain tile if it's too hard for you, you little baby.</p>
+			</div>
+	</body>
+</html>

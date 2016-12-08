@@ -1,0 +1,379 @@
+/**
+ * Site header
+ */
+.site-header {
+    font-size: 35pt;
+    min-height: 2.5em;
+    margin: 0 0 0.5em;
+    text-align: left;
+    background: #325468;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
+.normal-header {
+    display: block;
+}
+
+.mobile-header {
+    display: none;
+}
+
+.header-img {
+    font-size: 35pt;
+    width: 100%;
+    height: 6em;
+    background-image: url("/img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.title-float {
+    z-index: 1000;
+    width: 50%;
+    position: absolute;
+    margin: 0 auto;
+    display: inline;
+    top: 4.75em;
+    left: -webkit-calc(#{$content-width}/4);
+    left: calc(#{$content-width}/4);
+    background: rgba(0,0,0,0.45);
+    text-align: center;
+    border-radius: 2px;
+    border: 3px solid white;
+}
+
+.title-bottom {
+    font-size: 35pt;
+    min-height: 2.5em;
+    margin: 0 0 0.5em;
+    text-align: left;
+    background: $blue-text;
+    background: #325468;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
+.title-bottom ul {
+    list-style: none;
+    max-width: 100px;
+    margin: 0 auto 0;
+    padding-top: 1.2em;
+}
+
+.title-bottom ul > li {
+    display: inline-block;
+    height: 32px;
+}
+
+.title-bottom ul > li > a {
+    border: none;
+    background: none;
+    display: inline-block;
+    height: 32px;
+}
+
+.title-bottom ul > li > a:hover {
+    border: none;
+    background: none;
+    opacity: 35%;
+}
+
+.title-bottom ul > li > a > img {
+    height: 32px;
+}
+
+.title-bottom ul > li > a:hover > img {
+    opacity: 35%;
+}
+
+.site-title, .site-title:visited {
+    font-family: 'Roboto Condensed', 'Lato`', -apple-system, 'Helvetica Neue', sans-serif;
+    font-size: 40pt;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0 1em;
+    display: inline-block;
+    color: white;
+    background: transparent;
+    text-align: center;
+    /*padding-bottom: 10px;*/
+    line-height: 2.2em;
+    border-bottom: 0px solid transparent;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+}
+
+.site-title:hover, .site-title:active {
+    border-bottom: 0px solid $brand-color;
+    background: transparent;
+    text-decoration: none;
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+    font-family: 'Lato';
+    padding: 30px 10px;
+    margin: 20px auto 0;
+    text-align: center;
+    border-top: 1px solid #f0f0f2;
+    background: white;
+}
+
+.footer-heading {
+    color: $blue-text;
+    color: $blue-dark;
+    margin: 0;
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+.footer-copyright {
+    color: $blue-dark;
+    margin: 0;
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+
+/**
+ * Page content
+ */
+.page-content {
+    margin: 2em auto;
+    background: white;
+    max-width: $content-width;
+    border: 1px solid darken($background-color, 5%);
+    border-radius: 2px;
+}
+
+.page-heading {
+    font-family: 'Lato';
+    font-size: 20pt;
+    margin-top: 20px;
+}
+
+.about {
+    margin-bottom: 30px;
+}
+
+.date {
+    font-family: 'Roboto Condensed';
+    font-size: 10pt;
+    font-weight: 600;
+    // color: #d2d2da;
+    color: lighten($brand-color, 30%);
+    margin: 0 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-family: 'Roboto Condensed';
+    font-size: $small-font-size;
+    color: $red-color;
+}
+
+.post-link {
+    color: #444;
+    display: block;
+    font-size: 16pt;
+
+    &:visited, &:hover, &:active {
+        color: #444;
+    }
+}
+
+/**
+ * Projects
+ */
+.project-header {
+    margin-bottom: 5px;
+}
+
+.skill-list {
+    padding: 0;
+    margin: 0 0 5px;
+    list-style: none;
+}
+
+.skill-list li {
+    font-family: 'Fira Mono';
+    font-size: 11pt;
+    background: #f0f0f2;
+    padding: 2px 4px;
+    display: inline-block;
+    color: #555;
+    border-radius: 5px;
+}
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
+
+.post-preview {
+    margin-bottom: 0;
+    color: #404040;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
+
+
+/**
+ * Image Posts
+ */
+
+ .post-image {
+    //  font-family: 'Roboto Condensed';
+     font-weight: 300;
+    //  background: #2E414F;
+    // background: whiteSmoke;
+    // background: rgba(#2E414F, 0.05);
+    background: #fbfbfb;
+     padding: 15px;
+     padding-top: 5px;
+     border: 1px solid whiteSmoke;
+     max-width: 510px;
+     margin: 0 auto;
+     margin-bottom: 25px;
+ }
+
+ .post-image .image {
+     display: block;
+     margin: 10px auto 0;
+     border: 2px solid rgba(100,100,100, 0.5);
+     max-width: 100%;
+ }
+
+ .post-image .caption {
+     padding: 0 15px;
+     color: #f0f0f0;
+     color: #444;
+     font-size: 12pt;
+     line-height: 1.5em;
+     margin: 10px 0 5px;
+ }
+
+ .post-image .high-res {
+     margin: 0 auto;
+     text-align: left;
+     float: left;
+     font-size: 11pt;
+ }
+
+ .post-image .date {
+     font-weight: 400;
+     text-align: right;
+     color: $red-color;
+ }
+
+/**
+ * Mobile
+ */
+@media (max-width: $content-width) {
+    .site-header {
+        min-height: 1.75em;
+    }
+    .normal-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+
+    .site-title {
+        font-size: 26pt;
+    }
+    .site-title img {
+        width: 48px;
+    }
+    .page-content {
+        margin: 0;
+        border: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-img {
+        height: 4em;
+    }
+}
