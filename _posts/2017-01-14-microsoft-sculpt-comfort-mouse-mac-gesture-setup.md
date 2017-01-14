@@ -1,5 +1,6 @@
 ---
 title: Microsoft Sculpt Comfort Mouse Mac Gesture Setup
+comments: true
 layout: post
 type: text
 description: A How-To on my custom Microsoft Sculpt Comfort Mouse setup for Macs using Karabiner.
