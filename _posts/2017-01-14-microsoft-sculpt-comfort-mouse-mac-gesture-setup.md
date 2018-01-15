@@ -6,7 +6,7 @@ type: text
 description: A How-To on my custom Microsoft Sculpt Comfort Mouse setup for Macs using Karabiner.
 ---
 
-UPDATE: A newer version of this for macOS El Captian and above can be found [here]().
+UPDATE: A newer version of this for macOS El Captian and above can be found [here](http://www.drewdunne.com/2018/01/15/microsoft-sculpt-comfort-mouse-macOS-gesture-setup-(updated).html).
 
 I was looking for a nice Bluetooth mouse a while back and I came across the Microsoft Sculpt Comfort Mouse. It connected purely through Bluetooth and not an excessive USB wireless receiver. I found some other mice while looking around, but to me the Sculpt Comfort mouse looked the cleanest, and I could confirm it would work with a Mac from online reviews. You can find the mouse here: [Microsoft Sculpt Comfort Mouse](https://www.microsoft.com/accessories/en-us/products/mice/sculpt-comfort-mouse/h3s-00003).
 
