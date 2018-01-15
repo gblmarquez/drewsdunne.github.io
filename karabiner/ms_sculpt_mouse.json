@@ -1,0 +1,109 @@
+{
+  "title": "Microsoft Sculpt Mouse",
+  "rules": [
+    {
+      "description": "Mission Control, expose and launchpad with side button",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "delete_or_backspace",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1118,
+                  "product_id": 1954,
+                  "is_keyboard": true,
+                  "is_pointing_device": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "tab",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1118,
+                  "product_id": 1954,
+                  "is_keyboard": true,
+                  "is_pointing_device": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command",
+            "modifiers": {
+              "optional": [
+                "left_command"
+              ]
+            }
+          },
+          "to_if_alone": [
+            {
+              "key_code": "launchpad"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1118,
+                  "product_id": 1954,
+                  "is_keyboard": true,
+                  "is_pointing_device": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

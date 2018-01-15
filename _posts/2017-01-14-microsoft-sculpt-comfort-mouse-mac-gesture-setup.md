@@ -6,6 +6,8 @@ type: text
 description: A How-To on my custom Microsoft Sculpt Comfort Mouse setup for Macs using Karabiner.
 ---
 
+UPDATE: A newer version of this for macOS El Captian and above can be found [here]().
+
 I was looking for a nice Bluetooth mouse a while back and I came across the Microsoft Sculpt Comfort Mouse. It connected purely through Bluetooth and not an excessive USB wireless receiver. I found some other mice while looking around, but to me the Sculpt Comfort mouse looked the cleanest, and I could confirm it would work with a Mac from online reviews. You can find the mouse here: [Microsoft Sculpt Comfort Mouse](https://www.microsoft.com/accessories/en-us/products/mice/sculpt-comfort-mouse/h3s-00003).
 
 After mulling it over for a while, I finally decided to bite the bullet and buy the mouse. The only thing that I left unknown when hitting that buy button was: What will I do with the side Windows button? I thought the gesture button on the side of the mouse could be easily configured to be shortcuts in the Mac preferences and boy was I wrong. Eventually I came across a solution. 
